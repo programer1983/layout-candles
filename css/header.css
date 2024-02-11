@@ -1,0 +1,135 @@
+.header {
+    padding: 4px 0 4px 0;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 46px;
+}
+.header-logo {}
+.header-nav {}
+.header-nav.open-active {
+    left: 0;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.header-list__item {}
+.header-list__item--phone{
+    display: none;
+}
+.header-list__link {
+    color: var(--baseColor);
+}
+.header-phone {}
+.header-phone__img {}
+.header-phone__number {}
+.header-burger{
+    width: 50px;
+    height: 30%;
+    display: none;
+    flex-direction: column;
+    row-gap: 7px;
+    cursor: pointer;
+}
+.header-burger  span{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+.header-body {
+    display: flex;
+    align-items: center;
+}
+.header-body__content {
+    padding-bottom: 100px;
+    z-index: 1;
+}
+.header-body__title {
+    font-family: var(--yesevaOne);
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    max-width: 391px;
+}
+.header-body__text {
+    margin-bottom: 48px;
+    width: 371px;
+}
+.header-body__button {
+    background: rgb(255, 189, 89);
+    padding: 18px 54px 18px 54px;
+}
+.header-body__images {
+    margin-left: -110px;
+}
+.header-body__img {
+    max-width: 1068.99px;
+    max-height: 669.29px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1040px){
+    .header-body__images {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 800px){
+    .header-nav{
+       position: fixed;
+       top: 0;
+       bottom: 0;
+       left: -100%;
+       right: 0;
+       width: 100%;
+       height: 100%;
+       background: rgb(255, 189, 89);
+       z-index: 2;
+       overflow-y: auto;
+       transition: all .6s ease;
+    }
+    .header-list{
+       flex-direction: column;
+       padding: 50px 0;
+       row-gap: 40px;
+    }
+    .header-list__link, .header-list__item--phone{
+        font-size: 30px;
+    }
+    .header-list__item--phone{
+        display: block;
+    }
+    .header-burger{
+        display: flex;
+        z-index: 2;
+    }
+    .header-phone{
+        display: none;
+    }
+    .header-body{
+        flex-direction: column;
+    } 
+    .header-body__images {
+        margin-left: 0px;
+    } 
+}
+
+@media (max-width: 400px){
+    .header-body__title {
+       width: 100%;
+    }
+    .header-body__text {
+       width: 100%;
+    }
+    .header-burger{
+        width: 40px;
+        height: 20px;
+    }
+}
