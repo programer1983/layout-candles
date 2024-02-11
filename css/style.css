@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto&family=Yeseva+One&display=swap');
+
+@import "./reset.css";
+
+
+
+:root{
+    --comfortaa: 'Comfortaa', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --yesevaOne: 'Yeseva One', serif;
+    --baseColor: rgb(0, 0, 0);
+    --fontSize: 14px;
+    --fontWeight: 400;
+    --lineHaight: 16px;
+}
+
+body {
+    font-family: var(--comfortaa);
+    color: var(--baseColor);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+    line-height: var(--lineHaight);
+}
+
+.container{
+    max-width: 1192px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
