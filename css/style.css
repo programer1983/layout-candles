@@ -3,6 +3,7 @@
 @import "./reset.css";
 @import "./header.css";
 @import "./about.css";
+@import "./products.css";
 
 :root{
     --comfortaa: 'Comfortaa', sans-serif;
