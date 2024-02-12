@@ -2,6 +2,7 @@
 
 @import "./reset.css";
 @import "./header.css";
+@import "./about.css";
 
 :root{
     --comfortaa: 'Comfortaa', sans-serif;
