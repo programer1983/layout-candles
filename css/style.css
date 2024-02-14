@@ -4,6 +4,8 @@
 @import "./header.css";
 @import "./about.css";
 @import "./products.css";
+@import "./stages.css";
+@import "./courses.css";
 
 :root{
     --comfortaa: 'Comfortaa', sans-serif;
@@ -27,4 +29,27 @@ body {
     max-width: 1192px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.title{
+    font-family: var(--yesevaOne);
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 15px;
+}
+
+.decor {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -150px;
+}
+.decor__icon {
+    width: 24px;
+    height: 33px;
+}
+.decor__line {
+    width: 908px;
+    height: 1px;
+    background: rgb(123, 97, 82);
+    margin-top: 20px;
 }

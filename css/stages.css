@@ -1,0 +1,131 @@
+.stages {
+    padding-top: 133px;
+    background: rgb(255, 248, 243);
+    overflow-x: hidden;
+}
+.stages-inner {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 70px;
+}
+.stages-content {
+    width: 372px;
+}
+.stages-title {
+    font-family: var(--yesevaOne);
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 15px;
+}
+.stages-text {}
+.stages-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 71px 24px;
+}
+.stages-item {
+    display: flex;
+    gap: 0 38.41px;
+    position: relative;
+}
+.stages-item__content {
+    width: 174px;
+}
+.stages-item__text {
+   
+}
+.stages-item__number {
+    color: rgb(190, 164, 149);
+    font-family: var(--yesevaOne);
+    font-size: 30px;
+    line-height: 35px;
+}
+.stages-item__number--left{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.stages-item__number--right{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.stages-item__images {}
+.stages-item__image {}
+.stages-decor {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -150px;
+}
+.stages-decor__icon {
+    width: 24px;
+    height: 33px;
+}
+.stages-decor__line {
+    width: 908px;
+    height: 1px;
+    background: rgb(123, 97, 82);
+    margin-top: 20px;
+}
+
+ @media (max-width: 1440px){
+    .stages {
+        padding-top: 100px;
+    }
+    .stages-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stages-content{
+        width: 372px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+    .stages-items {
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 900px){
+    .stages-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+
+@media (max-width: 450px){
+    .stages {
+        padding-top: 50px;
+    }
+    .stages-inner {
+        margin-bottom: 30px;
+    }
+    .stages-content{
+        width: 100%;
+    }
+} 
+
+@media (max-width: 400px){
+    .stages-content {
+        margin-bottom: 40px;
+    }
+    .stages-items {
+        gap: 20px 0px;
+    }
+    .stages-item {
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 0;
+    }
+    .stages-item__content--revers{
+        order: -1;
+    }
+    .stages-item__text{
+        margin-bottom: 20px;
+        width: 300px;
+        margin-left: -50px;
+    }
+    .stages-item__number{
+        display: none;
+    }
+} 

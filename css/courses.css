@@ -1,0 +1,164 @@
+.courses {
+    padding-top: 185px;
+    background: rgb(255, 248, 243);
+    overflow-x: hidden;
+}
+.courses-inner {
+    display: flex;
+    gap: 0 74px;
+    margin-bottom: 70px;
+}
+.courses-content {}
+.courses-content__title {
+    font-family: var(--yesevaOne);
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 15px;
+}
+.courses-content__text {
+    width: 369px;
+}
+.courses-items {
+    display: flex;
+    column-gap: 126px;
+}
+.courses-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.courses-item--fearst:before {
+    content: "Основи виготовлення свічок";
+    position: absolute;
+    left: 0;
+    top: 166px;
+    background: rgb(190, 164, 149);
+    width: 191px;
+    padding: 15px 10px;
+    color: rgb(255, 255, 255);
+    font-family: var(--yesevaOne);
+    font-size: 11px;
+    line-height: 13px;
+}
+.courses-item--fearst::after {
+    content: "Навчання - 20 год";
+    position: absolute;
+    left: 0;
+    top: 224px;
+    background: rgb(190, 164, 149);
+    width: 129px;
+    padding: 7px 10px;
+    color: rgb(255, 255, 255);
+    font-family: var(--yesevaOne);
+    font-size: 11px;
+    line-height: 13px;
+}
+.courses-item--last:before {
+    content: "Мистецтво ароматерапії";
+    position: absolute;
+    left: 0;
+    top: 166px;
+    background: rgb(190, 164, 149);
+    width: 191px;
+    padding: 15px 10px;
+    color: rgb(255, 255, 255);
+    font-family: var(--yesevaOne);
+    font-size: 11px;
+    line-height: 13px;
+}
+.courses-item--last::after {
+    content: "Навчання - 20 год";
+    position: absolute;
+    left: 0;
+    top: 224px;
+    background: rgb(190, 164, 149);
+    width: 129px;
+    padding: 7px 10px;
+    color: rgb(255, 255, 255);
+    font-family: var(--yesevaOne);
+    font-size: 11px;
+    line-height: 13px;
+}
+.courses-item__image {
+    margin-bottom: 28px;
+}
+.courses-item__block{
+    position: absolute;
+    top: 329px;
+    right: -14px;
+    width: 86px;
+    padding: 19px 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(190, 164, 149);
+    font-family: var(--yesevaOne);
+    font-size: 11px;
+    line-height: 13px;
+}
+.courses-item__title {
+    font-family: var(--yesevaOne);
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.courses-item__text {
+    margin-bottom: 23px;
+    text-align: center;
+    width: 268px;
+}
+.courses-item__button {
+    background: rgb(255, 189, 89);
+    padding: 13px 16px;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+}
+.courses-decor {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -150px;
+}
+.courses-decor__icon {
+    width: 24px;
+    height: 33px;
+}
+.courses-decor__line {
+    width: 908px;
+    height: 1px;
+    background: rgb(123, 97, 82);
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px){
+    .courses {
+        padding-top: 100px;
+    }
+    .courses-inner{
+        flex-direction: column;
+    }
+    .courses-content{
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+    .courses-items{
+        justify-content: center;
+        align-items: center;
+        column-gap: 100px;
+    }
+}
+
+@media (max-width: 700px){
+    .courses {
+        padding-top: 50px;
+    }
+    .courses-content__text {
+        width: 100%;
+    }
+    .courses-items{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .courses-item{
+        width: 269px;
+        height: 532px;
+    }
+}
