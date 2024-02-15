@@ -6,6 +6,7 @@
 @import "./products.css";
 @import "./stages.css";
 @import "./courses.css";
+@import "./teachers.css";
 
 :root{
     --comfortaa: 'Comfortaa', sans-serif;

@@ -1,0 +1,100 @@
+.teachers {
+    background: rgb(165, 151, 142);
+    padding: 50px 0 83px 0;
+    margin-top: 159px;
+}
+.teachers-inner {
+    display: flex;
+    gap: 0 98px;
+}
+.teachers-content {}
+.teachers-content__title {
+    color: rgb(250, 250, 250);
+    font-family: var(--yesevaOne);
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 15px;
+}
+.teachers-content__text {
+    color: rgb(250, 250, 250);
+    width: 391px;
+}
+.teachers-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 78px 177px;
+}
+.teachers-items__item {
+    position: relative;
+}
+.teachers-item__images {}
+.teachers-item__block {
+    position: absolute;
+    right: -102px;
+    bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 10.91px;
+    line-height: 12px;
+    background: rgb(123, 97, 82);
+    width: 166px;
+    padding: 14px 9px 15px 9px;
+    text-align: center;
+}
+.teachers-item__block span{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: var(--yesevaOne);
+    font-size: 12.47px;
+    line-height: 14px;
+    margin-bottom: 3.19px;
+}
+
+@media (max-width: 1390px){
+    .teachers-inner{
+        flex-direction: column;
+    }
+    .teachers-content{
+        margin: 0 auto 100px;
+        text-align: center;
+    }
+    .teachers-items {
+        column-gap: 50px;
+        width: 700px;
+        margin:  auto;
+     }
+     .teachers-items__item{
+        width: 217.75px;
+        height: 220px;
+     }
+}
+
+@media (max-width: 830px){
+    .teachers {
+        margin-top: 79px;
+    }
+    .teachers-content {
+        margin-bottom: 40px;
+    }
+    .teachers-items {
+       grid-template-columns: repeat(1, 1fr);
+       width: 250px;
+     }
+}
+
+@media (max-width: 420px){
+    .teachers {
+        margin-top: 40px;
+    }
+    .teachers-content__text{
+        width: 100%;
+    }
+    .teachers-items {
+        row-gap: 120px;
+        width: 220px;
+    }
+    .teachers-item__block {
+        position: absolute;
+        right: 25px;
+        bottom: -80px;
+    }
+}
