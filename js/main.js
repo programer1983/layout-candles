@@ -10,3 +10,19 @@ function openBurger(){
 
 
 
+/* =========================================================================== */
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    
+    spaceBetween: 50,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+
+
+

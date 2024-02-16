@@ -7,6 +7,7 @@
 @import "./stages.css";
 @import "./courses.css";
 @import "./teachers.css";
+@import "./reviews.css";
 
 :root{
     --comfortaa: 'Comfortaa', sans-serif;
@@ -25,20 +26,11 @@ body {
     font-weight: var(--fontWeight);
     line-height: var(--lineHaight);
 }
-
 .container{
     max-width: 1192px;
     padding: 0 15px;
     margin: 0 auto;
 }
-
-.title{
-    font-family: var(--yesevaOne);
-    font-size: 40px;
-    line-height: 46px;
-    margin-bottom: 15px;
-}
-
 .decor {
     display: flex;
     justify-content: flex-end;
