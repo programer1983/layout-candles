@@ -21,7 +21,21 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       clickable: true,
     },
-  });
+});
+
+
+const swiper2 = new Swiper('.certificates-swiper', {
+  loop: true,
+  
+  slidesPerView: 1,
+  spaceBetween: 20,
+  
+  pagination: {
+    el: '.certificates-pagination',
+    clickable: true,
+  },
+});
+
 
 
 
