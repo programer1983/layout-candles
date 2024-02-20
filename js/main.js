@@ -24,6 +24,8 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+/* ============================================================================ */
+
 const swiper2 = new Swiper('.certificates-swiper', {
   loop: true,
   
@@ -35,6 +37,16 @@ const swiper2 = new Swiper('.certificates-swiper', {
     clickable: true,
   },
 });
+
+
+/* ============================================================================ */
+
+
+
+
+
+
+
 
 
 
