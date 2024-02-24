@@ -24,9 +24,7 @@
     line-height: 46px;
     margin-bottom: 15px;
 }
-.products-text {
-
-}
+.products-text {}
 .products-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,6 +74,11 @@
     padding: 18px 54px;
     color: rgb(39, 39, 39);
     font-weight: 600;
+    transition: all .3s ease;
+}
+.roducts-item__button:hover {
+    background: rgb(163, 125, 67);
+    color: #fff;
 }
 .products-decor {
     display: flex;

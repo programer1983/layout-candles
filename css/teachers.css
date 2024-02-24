@@ -26,6 +26,10 @@
 }
 .teachers-items__item {
     position: relative;
+    transition: all .5s ease;
+}
+.teachers-items__item:hover {
+   transform: scale(1.1);
 }
 .teachers-item__images {}
 .teachers-item__block {

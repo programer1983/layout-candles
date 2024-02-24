@@ -73,6 +73,11 @@
     font-weight: 600;
     width: 216px;
     align-self: flex-end;
+    transition: all .3s ease;
+}
+.reviews-slider__content-button:hover {
+    background: rgb(163, 125, 67);
+    color: #fff;
 }
 .swiper-pagination {}
 .swiper-pagination-bullet{
