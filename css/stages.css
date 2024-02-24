@@ -27,8 +27,8 @@
     display: flex;
     gap: 0 38.41px;
     position: relative;
-    transition: all 3s ease;
-    transform: rotateY(360deg);
+    transition: all 2s ease;
+    transform: rotateY(180deg);
 }
 .stages-item.active{
     transform: rotateY(0);
