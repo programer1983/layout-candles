@@ -1,10 +1,12 @@
 const headerBurger = document.querySelector('.header-burger')
 const headerNav = document.querySelector('.header-nav')
+const html = document.querySelector('html')
 
 headerBurger.addEventListener('click', openBurger)
 
 function openBurger(){
     headerNav.classList.toggle('open-active')
+    html.classList.toggle('uscroll')
 }
 
 

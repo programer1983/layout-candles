@@ -55,3 +55,7 @@ body {
     background: rgb(123, 97, 82);
     margin-top: 20px;
 }
+
+.uscroll{
+    overflow: hidden;
+}
