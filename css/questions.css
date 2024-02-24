@@ -16,6 +16,13 @@
 .questions-accordion__item {
     margin-bottom: 10px;
     position: relative;
+    transform: translateY(20%);
+    transition: all .8s ease .2s;
+    opacity: 0;
+}
+.questions-accordion__item.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 .questions-accordion__button {
     display: flex;

@@ -27,6 +27,11 @@
     display: flex;
     gap: 0 38.41px;
     position: relative;
+    transition: all .9s ease;
+    transform: rotateY(360deg);
+}
+.stages-item.active{
+    transform: rotateY(0);
 }
 .stages-item__content {
     width: 174px;

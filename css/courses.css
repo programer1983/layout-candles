@@ -1,11 +1,18 @@
 .courses {
     padding-top: 185px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .courses-inner {
     display: flex;
     gap: 0 74px;
     margin-bottom: 70px;
+    transform: translateY(20%);
+    transition: all .8s ease;
+    opacity: 0;
+}
+.courses-inner.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 .courses-content {}
 .courses-content__title {

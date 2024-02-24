@@ -1,6 +1,6 @@
 .products {
     padding-top: 300px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .products-body {
     display: flex;
@@ -10,6 +10,13 @@
 }
 .products-content {
     max-width: 391px;
+    transform: translateY(20%);
+    transition: all .8s;
+    opacity: 0;
+}
+.products-content.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 .products-title {
     font-family: var(--yesevaOne);
@@ -26,6 +33,13 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 109px;
     row-gap: 50px;
+    transform: translateY(-20%);
+    transition: all .8s;
+    opacity: 0;
+}
+.products-items.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 .products-item {
     display: flex;

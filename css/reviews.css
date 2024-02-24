@@ -1,12 +1,21 @@
 .reviews {
     padding-top: 150px;
     padding-bottom: 56px;
+    overflow: hidden;
 }
 .reviews-inner {
     display: flex;
     column-gap: 18px;
 }
-.reviews-content {}
+.reviews-content {
+    transform: translateX(-20%);
+    transition: all .9s ease;
+    opacity: 0;
+}
+.reviews-content.active {
+    transform: translateX(0);
+    opacity: 1;
+}
 .reviews-content__title {
     width: 372px;
     font-family: var(--yesevaOne);
@@ -19,6 +28,13 @@
 }
 .reviews-slider {
     overflow-x: hidden;
+    transform: translateX(20%);
+    transition: all .8s ease;
+    opacity: 0;
+}
+.reviews-slider.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 .swiper {}
 .swiper-wrapper {

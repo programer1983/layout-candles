@@ -7,10 +7,13 @@
     display: flex;
     gap: 0 200px;
     margin-bottom: 40px;
+    transform: scale(0);
+    transition: all .8s ease;
 }
-
+.certificates-inner.active {
+    transform: scale(1);
+}
 .certificates-content {}
-
 .certificates-title {
     font-family: var(--yesevaOne);
     font-size: 40px;
