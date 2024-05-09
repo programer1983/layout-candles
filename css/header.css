@@ -1,5 +1,6 @@
 .header {
     padding: 4px 0 4px 0;
+    overflow-x: hidden;
 }
 .header-top {
     display: flex;

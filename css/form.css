@@ -1,5 +1,6 @@
 .form {
     margin-top: 150px;
+    overflow-x: hidden;
 }
 .form-inner {
     display: flex;

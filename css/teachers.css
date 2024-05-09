@@ -2,6 +2,7 @@
     background: rgb(165, 151, 142);
     padding: 50px 0 83px 0;
     margin-top: 159px;
+    overflow-x: hidden;
 }
 .teachers-inner {
     display: flex;
